@@ -9,7 +9,6 @@ def detectGas(pin):
     print "High Gas concentration detected!"
     return
 
-
 GPIO.add_event_detect(18, GPIO.RISING)
 GPIO.add_event_callback(18, detectGas)
 
